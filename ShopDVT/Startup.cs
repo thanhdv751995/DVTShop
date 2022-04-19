@@ -36,8 +36,9 @@ namespace ShopDVT
             services.ConfigureCors();
             services.ConfigureSqlContext(Configuration);
             services.ConfigureIISIntegration();
-            services.ConfigureIISIntegration();
-         //   services.AddDbContext<RepositoryContext>();
+            //    services.ConfigureIISIntegration();
+            //   services.AddDbContext<RepositoryContext>();
+            services.ConfigureRepositoryManager();
             services.AddControllers();
             services.ConfigureLoggerService();
             services.AddSwaggerGen(c =>

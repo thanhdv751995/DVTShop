@@ -161,3 +161,4 @@ C:\Users\Thanh\Desktop\Project dv\ShopDVT\obj\Debug\net5.0\ShopDVT.dll
 C:\Users\Thanh\Desktop\Project dv\ShopDVT\obj\Debug\net5.0\ref\ShopDVT.dll
 C:\Users\Thanh\Desktop\Project dv\ShopDVT\obj\Debug\net5.0\ShopDVT.pdb
 C:\Users\Thanh\Desktop\Project dv\ShopDVT\obj\Debug\net5.0\ShopDVT.genruntimeconfig.cache
+C:\Users\Thanh\Desktop\Project dv\ShopDVT\obj\Debug\net5.0\ShopDVT.csproj.CopyComplete

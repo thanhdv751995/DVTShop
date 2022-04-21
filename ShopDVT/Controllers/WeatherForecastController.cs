@@ -16,18 +16,20 @@ namespace ShopDVT.Controllers
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
-
+        private readonly IRepositoryManager _repository;
         private readonly ILogger<WeatherForecastController> _loggerr;
         private ILoggerManager _logger;
 
         public WeatherForecastController(
             ILogger<WeatherForecastController> loggerr,
+            IRepositoryManager repository,
             ILoggerManager logger)
         {
+            _repository = repository;
             _logger = logger;
         }
 
- 
+
         [HttpGet]
         public IEnumerable<string> Get()
         {
@@ -37,6 +39,14 @@ namespace ShopDVT.Controllers
             _logger.LogError("Here is an error message from our values controller.");
             return new string[] { "value1", "value2" };
         }
+        //[HttpGet]
+        //public ActionResult<IEnumerable<string>> Get()
+        //{
+        //    _repository.Company.AnyMethodFromCompanyRepository();
+        //    _repository.Employee.AnyMethodFromEmployeeRepository();
+        //    return new string[] { "value1", "value2" };
+        //}
+
 
     }
 }

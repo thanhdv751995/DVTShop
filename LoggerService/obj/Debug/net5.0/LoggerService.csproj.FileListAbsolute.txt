@@ -26,3 +26,6 @@ C:\Users\Thanh\Desktop\Project dv\LoggerService\obj\Debug\net5.0\LoggerService.c
 C:\Users\Thanh\Desktop\Project dv\LoggerService\obj\Debug\net5.0\LoggerService.dll
 C:\Users\Thanh\Desktop\Project dv\LoggerService\obj\Debug\net5.0\ref\LoggerService.dll
 C:\Users\Thanh\Desktop\Project dv\LoggerService\obj\Debug\net5.0\LoggerService.pdb
+C:\Users\Thanh\Desktop\Project dv\LoggerService\bin\Debug\net5.0\Entities.dll
+C:\Users\Thanh\Desktop\Project dv\LoggerService\bin\Debug\net5.0\Entities.pdb
+C:\Users\Thanh\Desktop\Project dv\LoggerService\obj\Debug\net5.0\LoggerService.csproj.CopyComplete

@@ -1,3 +1,4 @@
+using Contracts;
 using Entities;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -38,6 +39,7 @@ namespace ShopDVT
             services.ConfigureIISIntegration();
             //    services.ConfigureIISIntegration();
             //   services.AddDbContext<RepositoryContext>();
+            services.AddAutoMapper(typeof(Startup));
             services.ConfigureRepositoryManager();
             services.AddControllers();
             services.ConfigureLoggerService();
@@ -48,7 +50,7 @@ namespace ShopDVT
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerManager logger)
         {
             if (env.IsDevelopment())
             {
@@ -60,7 +62,7 @@ namespace ShopDVT
             {
                 app.UseHsts();
             }
-
+            app.ConfigureExceptionHandler(logger);
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCors("CorsPolicy");

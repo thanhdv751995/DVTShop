@@ -21,3 +21,6 @@ C:\Users\Thanh\Desktop\Project dv\Contracts\obj\Debug\net5.0\Contracts.csproj.Co
 C:\Users\Thanh\Desktop\Project dv\Contracts\obj\Debug\net5.0\Contracts.dll
 C:\Users\Thanh\Desktop\Project dv\Contracts\obj\Debug\net5.0\ref\Contracts.dll
 C:\Users\Thanh\Desktop\Project dv\Contracts\obj\Debug\net5.0\Contracts.pdb
+C:\Users\Thanh\Desktop\Project dv\Contracts\bin\Debug\net5.0\Entities.dll
+C:\Users\Thanh\Desktop\Project dv\Contracts\bin\Debug\net5.0\Entities.pdb
+C:\Users\Thanh\Desktop\Project dv\Contracts\obj\Debug\net5.0\Contracts.csproj.CopyComplete

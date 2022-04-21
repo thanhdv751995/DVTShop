@@ -29,7 +29,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Thanh\\Desktop\\Project dv\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Thanh\\Desktop\\Project dv\\Entities\\Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -108,6 +112,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.0, )"

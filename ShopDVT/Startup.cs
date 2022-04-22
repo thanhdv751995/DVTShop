@@ -37,9 +37,12 @@ namespace ShopDVT
             services.ConfigureCors();
             services.ConfigureSqlContext(Configuration);
             services.ConfigureIISIntegration();
-            //    services.ConfigureIISIntegration();
-            //   services.AddDbContext<RepositoryContext>();
             services.AddAutoMapper(typeof(Startup));
+            services.AddControllers(config =>
+            {
+                config.RespectBrowserAcceptHeader = true;
+                config.ReturnHttpNotAcceptable = true;
+            }).AddXmlDataContractSerializerFormatters().AddCustomCSVFormatter();
             services.ConfigureRepositoryManager();
             services.AddControllers();
             services.ConfigureLoggerService();

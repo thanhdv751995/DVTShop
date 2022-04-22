@@ -36,6 +36,9 @@ namespace ShopDVT.Extensions
         //  public static string GetConnectionString(this IConfiguration configuration, string name);
         public static void ConfigureRepositoryManager(this IServiceCollection services) =>
         services.AddScoped<IRepositoryManager, RepositoryManager>();
+        public static IMvcBuilder AddCustomCSVFormatter(this IMvcBuilder builder) =>
+         builder.AddMvcOptions(config => config.OutputFormatters.Add(new
+        CsvOutputFormatter()));
 
     }
 }
